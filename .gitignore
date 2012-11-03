@@ -26,7 +26,7 @@ syntax: glob
 
 [Dd]ebug*/
 
-
+[Bb]in
 */bin/*
 !lib/Castle Windsor 2.0/bin/
 
