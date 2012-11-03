@@ -1,0 +1,12 @@
+Name: Default
+DataProvider: SqlServer
+DataConnectionString: Data Source=CHUVAK;Initial Catalog=voda;Persist Security Info=True;User ID=voda;Password=ciborg22
+DataPrefix: null
+RequestUrlHost: null
+RequestUrlPrefix: null
+State: Running
+EncryptionAlgorithm: AES
+EncryptionKey: 0026161482C17C2F2DE37CE35C791EBCA9ACB904ADB9FE8F2E812AEE626EC96F
+HashAlgorithm: HMACSHA256
+HashKey: 04AE2030BA3EDD912144E7B0E454CFB17759BFD9CC96E6CB7125D67785399F21F5FC8A21330FF86D8153A5339231134DD5189FEA4F959E649051869A241D6790
+Themes: 
