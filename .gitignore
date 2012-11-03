@@ -16,19 +16,24 @@ syntax: glob
 *.suo
 *.tlb
 *.tlh
-*.bak
+
 *.cache
 *.ilk
 *.log
 *.lib
 *.sbr
 *.scc
-[Bb]in
+
 [Dd]ebug*/
+
+
 */bin/*
+!lib/Castle Windsor 2.0/bin/
+
 */obj/*
 [Rr]elease*/
 _ReSharper*/
+_ReSharper*
 _ReSharper.voda/
 _ReSharper.XLN
 [Tt]humbs.db
@@ -38,7 +43,7 @@ _ReSharper.XLN
 *.resharper
 *.ReSharper
 
-Build/version.txt
+
 
 #ignore StyleCope cache
 #StyleCop.Cache
@@ -53,41 +58,10 @@ Build/version.txt
 
 #winword temp files
 ~$*.docx
-Development/Solution/eConscribi.ViewLayer/temp/ExcelConvertion/*.xlsx
-Development/Solution/eConscribi.ViewLayer/temp/*.pdf
-Development/Solution/eConscribi.ViewLayer/temp/*.jpg
 
-Development/Solution/eConscribi.ViewLayer/Web.config
-Development/Solution/eConscribi.ViewLayer/Web.Qa.config
-Development/Solution/eConscribi.ViewLayer/Web.Staging.config
-Development/Solution/eConscribi.ViewLayer/Web.Production.config
-Development/Solution/eConscribi.Coupling/Coupling.csproj.user
-Development/Solution/eConscribi.ViewLayer/App_Config/ConnectionStrings.config
-Development/Solution/eConscribi.ViewLayer/App_Config/ConnectionStrings.cs
-Development/Solution/eConscribi.ViewLayer/App_Config/ConnectionStrings.Production.config
-Development/Solution/eConscribi.ViewLayer/App_Config/ConnectionStrings.Qa.config
-Development/Solution/eConscribi.ViewLayer/App_Config/ConnectionStrings.Staging.config
-Development/tools/MemcachedManager/Default.xml
-Development/Solution/Econscribi.SchedulerService/App.config
-Development/Solution/Econscribi.SchedulerService/App.Production.config
-Development/Solution/Econscribi.SchedulerService/App.Qa.config
-Development/Solution/Econscribi.SchedulerService/App.Staging.config
+artifacts/
+build/
+buildtasks/
 
-#ignore temp dir
-[Tt]emp/
-[Tt]mp/
 
-Build/MSBuild.Community.Tasks/Start.bat
-Build/Start.bat
-Development/Solution/Econscribi.DataLayer.Database.Migration/App_Config/ConnectionStrings.AutomatedQa.config
-Development/Solution/Econscribi.DataLayer.Database.Migration/App_Config/ConnectionStrings.config
-Development/Solution/Econscribi.DataLayer.Database.Migration/App_Config/ConnectionStrings.Production.config
-Development/Solution/Econscribi.DataLayer.Database.Migration/App_Config/ConnectionStrings.Qa.config
-Development/Solution/Econscribi.DataLayer.Database.Migration/App_Config/ConnectionStrings.Staging.config
-Development/Solution/Database.CleanUp/App_Config/ConnectionStrings.config
-Development/Solution/Database.CleanUp/App_Config/ConnectionStrings.AutomatedQa.config
-Development/Solution/Database.CleanUp/App_Config/ConnectionStrings.Production.config
-Development/Solution/Database.CleanUp/App_Config/ConnectionStrings.Qa.config
-Development/Solution/Database.CleanUp/App_Config/ConnectionStrings.Staging.config
-Development/Solution/eConscribi.ViewLayer/Web.AutomatedQa.config
-_ReSharper*
+
