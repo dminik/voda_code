@@ -29,6 +29,7 @@ syntax: glob
 [Bb]in
 */bin/*
 !lib/Castle Windsor 2.0/bin/
+!lib/autofac-contrib/
 
 */obj/*
 [Rr]elease*/
