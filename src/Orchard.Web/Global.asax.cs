@@ -6,7 +6,9 @@ using Orchard.Environment;
 using Orchard.WarmupStarter;
 
 namespace Orchard.Web {
-    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
+	using StackExchange.Profiling;
+
+	// Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
 
     public class MvcApplication : HttpApplication {
@@ -26,11 +28,18 @@ namespace Orchard.Web {
         }
 
         protected void Application_BeginRequest() {
+			if (Request.IsLocal)
+			{
+				MiniProfiler.Start();
+			} 
+
             _starter.OnBeginRequest(this);
         }
 
         protected void Application_EndRequest() {
             _starter.OnEndRequest(this);
+
+			MiniProfiler.Stop();
         }
 
         private static void HostBeginRequest(HttpApplication application, IOrchardHost host) {
