@@ -19,6 +19,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>Dark</ModuleName>
+    <VirtualPath>~/Themes/Dark/Dark.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Dashboard</ModuleName>
     <VirtualPath>~/Core/Dashboard</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
@@ -41,6 +47,12 @@
         <VirtualPath>~/Modules/Lucene/bin/Lucene.Net.dll</VirtualPath>
       </Reference>
     </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Mango</ModuleName>
+    <VirtualPath>~/Themes/Mango/Mango.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
   </Dependency>
   <Dependency>
     <ModuleName>Markdown</ModuleName>

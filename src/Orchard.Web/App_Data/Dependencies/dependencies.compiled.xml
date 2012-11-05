@@ -1,10 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
+    <ExtensionId>Dark</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Dark/Dark.csproj</VirtualPath>
+    <Hash>91ac22fd6b4d4807</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>Lucene</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Lucene/bin/Lucene.dll</VirtualPath>
     <Hash>9226b8ff7a751acc</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Mango</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Mango/Mango.csproj</VirtualPath>
+    <Hash>48e01981ce5855ec</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Markdown</ExtensionId>
