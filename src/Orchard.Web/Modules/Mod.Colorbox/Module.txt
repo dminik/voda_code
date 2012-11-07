@@ -1,0 +1,12 @@
+Name: Mod.Colorbox
+AntiForgery: enabled
+Author: Harry Westbrook
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.0
+Description: Add colorbox to make stuff look...fancy.
+Features:
+    Mod.Colorbox:
+		Name: Colorbox
+        Description: Add colorbox to make stuff look...fancy.
+		Dependencies: Orchard.jQuery

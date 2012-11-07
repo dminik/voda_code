@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63FBD4D9-E1DA-4A7B-AA6A-D6074FE50867}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alois.Timetables</RootNamespace>
+    <AssemblyName>Alois.Timetables</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\..\OrchardBasicCorrectness.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Orchard.Core">
+      <HintPath>..\..\bin\Orchard.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Orchard.Framework, Version=1.0.20.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Orchard.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenu.cs" />
+    <Compile Include="Drivers\TimetableArchivesPartDriver.cs" />
+    <Compile Include="Drivers\RecentTimetableAppointmentsPartDriver.cs" />
+    <Compile Include="Handlers\TimetableArchivesPartHandler.cs" />
+    <Compile Include="Handlers\RecentTimetableAppointmentsPartHandler.cs" />
+    <Compile Include="Models\TimetableArchivesPart.cs" />
+    <Compile Include="Models\TimetableArchivesPartRecord.cs" />
+    <Compile Include="Models\RecentTimetableAppointmentsPart.cs" />
+    <Compile Include="Models\RecentTimetableAppointmentsPartRecord.cs" />
+    <Compile Include="ResourceManifest.cs" />
+    <Compile Include="Commands\TimetableCommands.cs" />
+    <Compile Include="Controllers\TimetableAdminController.cs" />
+    <Compile Include="Migrations.cs" />
+    <Compile Include="Drivers\TimetablePartDriver.cs" />
+    <Compile Include="Controllers\TimetableAppointmentAdminController.cs" />
+    <Compile Include="Controllers\TimetableAppointmentController.cs" />
+    <Compile Include="Controllers\TimetableApiController.cs" />
+    <Compile Include="Drivers\TimetableAppointmentPartDriver.cs" />
+    <Compile Include="Extensions\FeedManagerExtensions.cs" />
+    <Compile Include="Extensions\UrlHelperExtensions.cs" />
+    <Compile Include="Models\ArchiveData.cs" />
+    <Compile Include="Handlers\TimetablePartArchiveHandler.cs" />
+    <Compile Include="Models\TimetablePartArchiveRecord.cs" />
+    <Compile Include="Permissions.cs" />
+    <Compile Include="Routing\ITimetableSlugConstraint.cs" />
+    <Compile Include="Routing\IsArchiveConstraint.cs" />
+    <Compile Include="Routing\TimetableSlugConstraint.cs" />
+    <Compile Include="Routing\TimetableSlugConstraintUpdator.cs" />
+    <Compile Include="Security\TimetableAuthorizationEventHandler.cs" />
+    <Compile Include="Services\TimetableService.cs" />
+    <Compile Include="Controllers\TimetableController.cs" />
+    <Compile Include="Models\TimetablePart.cs" />
+    <Compile Include="Handlers\TimetablePartHandler.cs" />
+    <Compile Include="Models\TimetableAppointmentPart.cs" />
+    <Compile Include="Handlers\TimetableAppointmentPartHandler.cs" />
+    <Compile Include="Models\TimetablePartRecord.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Routes.cs" />
+    <Compile Include="Services\TimetableAppointmentService.cs" />
+    <Compile Include="Services\ITimetableAppointmentService.cs" />
+    <Compile Include="Services\ITimetableService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Admin\images\draft.gif" />
+    <Content Include="Content\Admin\images\offline.gif" />
+    <Content Include="Content\Admin\images\online.gif" />
+    <Content Include="Content\Admin\images\published.gif" />
+    <Content Include="Content\Admin\images\scheduled.gif" />
+    <Content Include="Module.txt" />
+    <Content Include="Scripts\alois-timetables-archives.js" />
+    <Content Include="Styles\alois-timetables-admin.css" />
+    <Content Include="Styles\alois-timetables-archives.css" />
+    <Content Include="Views\TimetableAdmin\Create.cshtml" />
+    <Content Include="Views\TimetableAdmin\Edit.cshtml" />
+    <Content Include="Views\TimetableAdmin\Item.cshtml" />
+    <Content Include="Views\TimetableAdmin\List.cshtml" />
+    <Content Include="Views\TimetableAppointmentAdmin\Create.cshtml" />
+    <Content Include="Views\TimetableAppointmentAdmin\Edit.cshtml" />
+    <Content Include="Views\TimetableAppointment\Item.cshtml" />
+    <Content Include="Views\TimetableAppointment\ListByArchive.cshtml" />
+    <Content Include="Views\Timetable\Item.cshtml" />
+    <Content Include="Views\Timetable\List.cshtml" />
+    <Content Include="Views\Parts.Timetables.Timetable.Manage.cshtml" />
+    <Content Include="Views\Parts.Timetables.Timetable.Description.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts.Timetables.Timetable.Fields.cshtml" />
+    <Content Include="Views\Parts.Timetables.TimetableAppointment.ListAdmin.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Content-Timetable.SummaryAdmin.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Placement.info">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Parts.Timetables.TimetableArchives.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts.Timetables.RecentTimetableAppointments.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts.Timetables.TimetableArchives.cshtml" />
+    <Content Include="Views\Content-Timetable.DetailAdmin.cshtml" />
+    <Content Include="Views\Content-Timetable.Edit.cshtml" />
+    <Content Include="Views\Parts.Timetables.TimetableAppointment.List.cshtml" />
+    <Content Include="Views\Parts.Timetables.RecentTimetableAppointments.cshtml" />
+    <Content Include="Views\Parts.Timetables.Timetable.TimetableAppointmentCount.cshtml" />
+    <Content Include="Scripts\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Styles\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.Timetables.TimetableAppointment.Item.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Alois.EventDate\Alois.EventDate.csproj">
+      <Project>{C889167C-E52C-4A65-A419-224B3D1B957D}</Project>
+      <Name>Alois.EventDate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\TimetableAppointment\Engage.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52475</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

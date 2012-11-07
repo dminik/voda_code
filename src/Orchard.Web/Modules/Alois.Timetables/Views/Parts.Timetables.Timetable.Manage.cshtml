@@ -1,0 +1,10 @@
+﻿@using Alois.Timetables.Extensions;
+@using Alois.Timetables.Models;
+@{
+    Style.Require("TimetablesAdmin");
+}
+@if (AuthorizedFor(Alois.Timetables.Permissions.ManageTimetables)) {
+<div class="item-properties actions">
+    <p><a href="@Url.TimetableEdit((TimetablePart)Model.ContentPart)" class="edit">@T("Timetable Properties")</a></p>
+</div>
+}

@@ -1,0 +1,36 @@
+﻿@model BinaryAnalysis.Navigation.ViewModels.MenuItemHierarchyItem
+@using Orchard.ContentManagement;
+@using Orchard.Core.Navigation.Models;
+@using Orchard.Core.Navigation.ViewModels;
+
+@if (Model.Item == null)
+{
+    if (Model.Children.Count > 0)
+    {
+        <ol class="menu-tree">
+        @Html.EditorFor(m => m.Children)
+        </ol>
+    }    
+}
+else
+{ 
+    <li class="menu-tree-item">
+        <div>
+            <input type="hidden" class="menu-tree-pos" name="MenuItemEntries[@Model.Order].Position" value="@Model.Item.Position" />
+            <input type="hidden" name="MenuItemEntries[@Model.Order].MenuItemId" value="@Model.Item.MenuItemId" />
+            <input type="hidden" disabled name="MenuItemEntries[@Model.Order].Order" value="@Model.Order" />
+
+            <input type="text" class="text-box" name="MenuItemEntries[@Model.Order].Text" value="@Model.Item.Text" />
+            @if (!Model.Item.IsMenuItem)
+            {<input type="text" class="text-box disabled" disabled="disabled" value="@Model.Item.Url" /> }
+            else
+            {<input type="text" class="text-box" name="MenuItemEntries[@Model.Order].Url" value="@Model.Item.Url" />}
+
+            <input type="text" disabled class="menu-tree-pos" value="@Model.Item.Position" />
+            @Html.ActionLink(T("Delete").Text, "HierarchyDelete", new { id = Model.Item.MenuItemId }, new { @class = "remove", itemprop = "RemoveUrl UnsafeUrl" })
+        </div>
+        <ol class="menu-tree-children">
+        @Html.EditorFor(m => m.Children)
+        </ol>
+    </li>
+}

@@ -1,0 +1,8 @@
+﻿@{
+	DateTime Now = System.DateTime.Now;
+	DateTime EventDate = Model.Date.ScheduledPublishUtc.Value;
+}
+<div id="engaged">
+You have signed up for an appointment at @Html.DateTime((DateTime)EventDate.ToLocalTime(), T("yyyy-MM-dd h:mm")).
+Be in time :)
+</div>

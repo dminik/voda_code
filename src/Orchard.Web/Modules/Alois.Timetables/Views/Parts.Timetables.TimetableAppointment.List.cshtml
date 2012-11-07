@@ -1,0 +1,31 @@
+﻿@using Orchard.ContentManagement;
+@using Orchard.Core.Common.Models;
+@using Alois.EventDate.Models;
+@using System;
+@{
+    IEnumerable<object> TimetableAppointments = Model.ContentItems;
+    Model.ContentItems.Classes.Add("content-items");
+    Model.ContentItems.Classes.Add("timetable-appointments");
+	DateTime Now = System.DateTime.Now;
+}
+<ul class="content-items timetable-appointments">
+@foreach(var Appointment in Model.ContentItems) {
+	<li>
+	@{
+		var EventDate = Appointment.Date.ScheduledPublishUtc.Value;
+		if (Now < EventDate) {
+			<img class="icon" src="@Href("~/Modules/Alois.EventDate/Content/Admin/images/online.gif")" alt="@T("Upcoming")" title="@T("The event is coming")" /> <text>@T("Free")</text>
+		} else {
+			<img class="icon" src="@Href("~/Modules/Alois.EventDate/Content/Admin/images/offline.gif")" alt="@T("Ended")" title="@T("This event hal already ended")" />
+		}
+	}
+	<img class="icon" src="@Href("~/Modules/Alois.EventDate/Content/Admin/images/scheduled.gif")" alt="@T("Upcoming")" title="@T("The event is coming")" />
+	@Html.DateTime((DateTime)EventDate.ToLocalTime(), T("M/d/yyyy h:mm tt"))
+
+	<a href="/Timetables/Engage/@(Appointment.Id)/" class="button primaryAction">Engage</a>
+	</li>
+}
+</ul>
+@if (TimetableAppointments == null || TimetableAppointments.Count() < 1) {
+<p>@T("There are no appointments in this timetable.")</p>
+}

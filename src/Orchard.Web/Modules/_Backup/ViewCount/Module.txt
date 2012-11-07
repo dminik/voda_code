@@ -1,0 +1,9 @@
+Name: View Count
+AntiForgery: enabled
+Author: Tiago Miguel Martins Silva
+Website: http://www.tiagosilva.eu
+Version: 0.7
+OrchardVersion: 1.4
+Description: This module allows users to display the content item view count. Just plugin and it will start counting each time a content item is displayed.
+FeatureDescription: View Counter.
+Category: Content

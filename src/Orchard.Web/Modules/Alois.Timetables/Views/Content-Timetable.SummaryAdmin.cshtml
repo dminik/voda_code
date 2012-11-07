@@ -1,0 +1,32 @@
+﻿@using Alois.Timetables.Extensions;
+@using Alois.Timetables.Models;
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+@{
+    Script.Require("ShapesBase");
+    ContentItem contentItem = Model.ContentItem;
+    TimetablePart Timetable = (TimetablePart)contentItem.Get(typeof(TimetablePart));
+    var returnUrl = ViewContext.RequestContext.HttpContext.Request.ToUrlString();
+}
+<div class="summary" itemscope="itemscope" itemid="@contentItem.Id" itemtype="http://orchardproject.net/data/ContentItem">
+    <div class="properties">
+        <input type="checkbox" value="@contentItem.Id" name="itemIds"/>
+        <h3>@Html.Link((string)Model.Title, Url.TimetableForAdmin((TimetablePart)Timetable))</h3>
+        @if (Model.Header != null) {
+        <div class="header">@Display(Model.Header)</div>
+        }
+        @if (Model.Meta != null) {
+        <div class="metadata">@Display(Model.Meta)</div>
+        }
+    </div>
+    <div class="related">
+        @Display(Model.Actions)
+        <a href="@Url.TimetableForAdmin(Timetable)" title="@T("List Appointments")">@T("List Appointments")</a>@T(" | ")
+        <a href="@Url.TimetableAppointmentCreate(Timetable)" title="@T("New Appointment")">@T("New Appointment")</a>@T(" | ")
+        <a href="@Url.TimetableEdit(Timetable)" title="@T("Edit")">@T("Edit")</a>@T(" | ")
+        <a href="@Url.TimetableRemove(Timetable)" title="@T("Remove")" itemprop="RemoveUrl UnsafeUrl">@T("Remove")</a>
+    </div>
+    @if (Model.Content != null) {
+    <div class="primary">@Display(Model.Content)</div>
+    }
+</div>

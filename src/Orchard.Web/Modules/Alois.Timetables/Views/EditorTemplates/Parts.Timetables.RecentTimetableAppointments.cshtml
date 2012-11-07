@@ -1,0 +1,11 @@
+﻿@model Alois.Timetables.Models.RecentTimetableAppointmentsPart
+<fieldset>
+    <div>
+        @Html.LabelFor(m => m.ForTimetable, T("For Timetable"))
+        @Html.TextBoxFor(m => m.ForTimetable)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Count, T("Count"))
+        @Html.TextBoxFor(m => m.Count)
+    </div>
+</fieldset>

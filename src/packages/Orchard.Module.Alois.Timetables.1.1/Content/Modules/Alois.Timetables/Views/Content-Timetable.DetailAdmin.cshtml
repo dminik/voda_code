@@ -1,0 +1,7 @@
+﻿@using Alois.Timetables.Extensions;
+@using Alois.Timetables.Models;
+<h1>@Html.TitleForPage((string)Model.Title)</h1>
+@Display(Model.Header)
+@Display(Model.Actions)
+<div class="manage"><a href="@Url.TimetableAppointmentCreate((TimetablePart)Model.ContentItem.Get(typeof(TimetablePart)))" class="add button primaryAction">@T("New Appointment")</a></div>
+@Display(Model.Content)

@@ -1,0 +1,13 @@
+Name: AIM Designer Tools
+AntiForgery: disabled
+Author: AIM Productions
+Website: http://aimorchard.codeplex.com
+Version: 1.4.0.0
+OrchardVersion: 1.4
+Description: Contains designer tools to ease the Themes development process
+Category: AIM
+Features:
+    AIM.DesignerTools.ActionAlternates:
+        Name: AIM Action Alternates
+        Description: Adds shape alternates for specific actions
+        Category: Designer

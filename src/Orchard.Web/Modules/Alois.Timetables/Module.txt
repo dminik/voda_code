@@ -1,0 +1,13 @@
+﻿Name: Timetables
+AntiForgery: enabled
+Author: KINo Team
+Website: http://alios.pl
+Version: 1.1
+OrchardVersion: 1.0
+Description: The Timetables module is implementing advanced Scheduling features. 
+Features:
+    Alois.Timetables:
+        Name: Timetables
+        Description: An advanced web schedule.
+        Dependencies: Shapes, Common, Routable, Feeds, Orchard.Widgets, Orchard.jQuery, Alois.EventDate
+        Category: Content

@@ -1,0 +1,8 @@
+﻿@model Alois.Timetables.Models.TimetableArchivesPart
+<fieldset>
+    <div>
+        @Html.LabelFor(m => m.ForTimetable, T("For Timetable"))
+        @Html.TextBoxFor(m => m.ForTimetable)
+        <span class="hint">@T("Show the archives for which Timetable? Note: specify the Timetable's slug.")</span>
+    </div>
+</fieldset>

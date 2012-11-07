@@ -1,0 +1,12 @@
+﻿Name: Orchard.SEO
+AntiForgery: enabled
+Author: JCF
+Website: http://orchardproject.net
+Version: 1.0.4
+OrchardVersion: 1.5
+Description: A SEO module tool
+Features:
+    Orchard.SEO:
+        Description: Inject description and kewords meta tags into the pages head section.
+        Name: Adds SEO "Description" and "Kewords" Meta Tags
+        Category: Content

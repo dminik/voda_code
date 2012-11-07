@@ -1,6 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
+    <ExtensionId>AIM.DesignerTools</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/AIM.DesignerTools/AIM.DesignerTools.csproj</VirtualPath>
+    <Hash>91d64e5c36894634</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Alois.Timetables</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Alois.Timetables/Alois.Timetables.csproj</VirtualPath>
+    <Hash>83df5e8544d7595e</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>BinaryAnalysis.Navigation</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/BinaryAnalysis.Navigation/BinaryAnalysis.Navigation.csproj</VirtualPath>
+    <Hash>d61a74a931207c9a</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Contrib.ChoiceList</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Contrib.ChoiceList/Contrib.ChoiceList.csproj</VirtualPath>
+    <Hash>fde6fd3129111307</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Contrib.GoogleAnalytics</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Contrib.GoogleAnalytics/Contrib.GoogleAnalytics.csproj</VirtualPath>
+    <Hash>d8668e15f7f9354c</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Contrib.Taxonomies</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Contrib.Taxonomies/Contrib.Taxonomies.csproj</VirtualPath>
+    <Hash>6adf44834299b84c</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>Dark</ExtensionId>
     <LoaderName>DynamicExtensionLoader</LoaderName>
     <VirtualPath>~/Themes/Dark/Dark.csproj</VirtualPath>
@@ -23,6 +59,12 @@
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Markdown/bin/Markdown.dll</VirtualPath>
     <Hash>923a71133d96de80</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Mod.Colorbox</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Mod.Colorbox/Mod.Colorbox.csproj</VirtualPath>
+    <Hash>91c5c64d4b40edae</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Orchard.Alias</ExtensionId>
@@ -241,6 +283,12 @@
     <Hash>48fbc068b82e62c4</Hash>
   </Dependency>
   <Dependency>
+    <ExtensionId>Orchard.SEO</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Orchard.SEO/Orchard.SEO.csproj</VirtualPath>
+    <Hash>b500028e9b6f87f7</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>Orchard.Setup</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Orchard.Setup/bin/Orchard.Setup.dll</VirtualPath>
@@ -305,5 +353,11 @@
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/UpgradeTo16/bin/UpgradeTo16.dll</VirtualPath>
     <Hash>e9ace52e46b810</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>ViewCount</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/ViewCount/ViewCount.csproj</VirtualPath>
+    <Hash>6c2cd7753a6de966</Hash>
   </Dependency>
 </Dependencies>

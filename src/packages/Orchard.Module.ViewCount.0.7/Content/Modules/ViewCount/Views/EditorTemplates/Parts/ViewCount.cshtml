@@ -1,0 +1,9 @@
+﻿@model ViewCount.Models.ViewCountPart
+
+<fieldset>
+  <legend>View Count</legend>
+  <div class="editor-field">
+    @Html.TextBoxFor(model => model.ViewCount)
+    @Html.ValidationMessageFor(model => model.ViewCount)
+  </div>
+</fieldset>

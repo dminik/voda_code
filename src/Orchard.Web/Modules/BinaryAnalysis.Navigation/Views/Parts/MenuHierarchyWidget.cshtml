@@ -1,0 +1,8 @@
+﻿@model dynamic
+
+@using BinaryAnalysis.Navigation.ViewModels
+
+@{
+    MenuHierarchy menu = Model.Menu as MenuHierarchy;
+}
+@Html.DisplayFor(m=>menu)

@@ -1,0 +1,9 @@
+@using Orchard.UI.Navigation;
+
+<ul class="breadcrumb">
+@foreach (MenuItem mi in Model.Breadcrumb) { 
+<li>
+&gt;<a href="@mi.Href">@mi.Text</a>
+</li>
+}
+</ul>

@@ -1,0 +1,27 @@
+﻿@model BinaryAnalysis.Navigation.ViewModels.MenuHierarchy
+
+@using Orchard.ContentManagement;
+@using Orchard.Core.Navigation.Models;
+@using Orchard.Core.Navigation.ViewModels;
+
+@if (Model.Item == null)
+{
+    if (Model.Children.Count > 0)
+    {
+        <ul>
+        @Html.DisplayFor(m => m.Children)
+        </ul>
+    }    
+}
+else
+{
+    <li>
+    <a href="@Model.Item.Href">@Model.Item.Text</a> @* (@Model.Item.Selected @Model.Order @Model.Level) *@
+    @if (Model.Children.Count > 0)
+    {
+        <ul>
+        @Html.DisplayFor(m => m.Children)
+        </ul>
+    } 
+    </li> 
+}

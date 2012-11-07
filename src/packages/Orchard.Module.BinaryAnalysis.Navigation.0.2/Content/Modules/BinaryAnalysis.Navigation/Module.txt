@@ -1,0 +1,13 @@
+Name: BinaryAnalysis.Navigation
+AntiForgery: enabled
+Author: Ikutsin
+Website: http://usanov.net
+Version: 0.2
+OrchardVersion: 1.4
+Description: Navigation submenus and hierarchy
+Features:
+	BinaryAnalysis.Navigation:
+		Name: BA Navigation
+		Category: BinaryAnalysis
+		Dependencies: Navigation, Orchard.Widgets, BinaryAnalysis.Commons
+		

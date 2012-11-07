@@ -1,6 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
+    <ModuleName>AIM.DesignerTools</ModuleName>
+    <VirtualPath>~/Modules/AIM.DesignerTools/AIM.DesignerTools.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Alois.Timetables</ModuleName>
+    <VirtualPath>~/Modules/Alois.Timetables/Alois.Timetables.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>BinaryAnalysis.Navigation</ModuleName>
+    <VirtualPath>~/Modules/BinaryAnalysis.Navigation/BinaryAnalysis.Navigation.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Common</ModuleName>
     <VirtualPath>~/Core/Common</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
@@ -17,6 +35,59 @@
     <VirtualPath>~/Core/Contents</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
     <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Contrib.ChoiceList</ModuleName>
+    <VirtualPath>~/Modules/Contrib.ChoiceList/Contrib.ChoiceList.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Contrib.GoogleAnalytics</ModuleName>
+    <VirtualPath>~/Modules/Contrib.GoogleAnalytics/Contrib.GoogleAnalytics.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Orchard.Alias</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Alias/bin/Orchard.Alias.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Orchard.Tokens</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Orchard.Autoroute</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Autoroute/bin/Orchard.Autoroute.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Alias</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Alias/bin/Orchard.Alias.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Tokens</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Contrib.Taxonomies</ModuleName>
+    <VirtualPath>~/Modules/Contrib.Taxonomies/Contrib.Taxonomies.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Autoroute</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Autoroute/bin/Orchard.Autoroute.dll</VirtualPath>
+      </Reference>
+    </References>
   </Dependency>
   <Dependency>
     <ModuleName>Dark</ModuleName>
@@ -67,21 +138,15 @@
     </References>
   </Dependency>
   <Dependency>
+    <ModuleName>Mod.Colorbox</ModuleName>
+    <VirtualPath>~/Modules/Mod.Colorbox/Mod.Colorbox.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Navigation</ModuleName>
     <VirtualPath>~/Core/Navigation</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Alias</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Alias/bin/Orchard.Alias.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Tokens</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References />
   </Dependency>
   <Dependency>
@@ -101,23 +166,6 @@
     <VirtualPath>~/Modules/Orchard.ArchiveLater/bin/Orchard.ArchiveLater.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Autoroute</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Autoroute/bin/Orchard.Autoroute.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Alias</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Alias/bin/Orchard.Alias.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Orchard.Tokens</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
-      </Reference>
-    </References>
   </Dependency>
   <Dependency>
     <ModuleName>Orchard.Blogs</ModuleName>
@@ -483,6 +531,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.SEO</ModuleName>
+    <VirtualPath>~/Modules/Orchard.SEO/Orchard.SEO.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.Setup</ModuleName>
     <VirtualPath>~/Modules/Orchard.Setup/bin/Orchard.Setup.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -635,6 +689,12 @@
         <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
       </Reference>
     </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>ViewCount</ModuleName>
+    <VirtualPath>~/Modules/ViewCount/ViewCount.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
   </Dependency>
   <Dependency>
     <ModuleName>XmlRpc</ModuleName>
