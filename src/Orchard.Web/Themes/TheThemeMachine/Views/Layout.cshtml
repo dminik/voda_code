@@ -18,6 +18,11 @@
 	SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
 	Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
 	Style.Include("site.css");
+	
+	Style.Include("../Scripts/sitemapstyler/sitemapstyler.css");
+	
+
+	
 
 	/* Some useful shortcuts or settings
 	***************************************************************/
@@ -62,6 +67,11 @@
 	var tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
 }
 @tag.StartElement
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript" src="@Href("~/Themes/TheThemeMachine/Scripts/sitemapstyler/sitemapstyler.js")"></script>
+
+
 @if (Model.Header != null)
 {
 <header id="layout-header" class="group">
@@ -166,32 +176,32 @@
 	<footer id="footer">
 		<div id="footer-quad" class="group">
 			@if (Model.FooterQuadFirst != null)
-			{
+   {
 				<div id="footer-quad-first">
 					@Zone(Model.FooterQuadFirst)
 				</div>
-			}
+   }
 			@if (Model.FooterQuadSecond != null)
-			{
+   {
 				<div id="footer-quad-second">
 					@Zone(Model.FooterQuadSecond)
 				</div>
-			}
+   }
 			@if (Model.FooterQuadThird != null)
-			{
+   {
 				<div id="footer-quad-third">
 					@Zone(Model.FooterQuadThird)
 				</div>
-			}
+   }
 			@if (Model.FooterQuadFourth != null)
-			{
+   {
 				<div id="footer-quad-fourth">
 					@Zone(Model.FooterQuadFourth)
 				</div>
-			}
+   }
 		</div>
 		@if (Model.Footer != null)
-		{
+  {
 			<div id="footer-sig" class="group">
 				
 				@Zone(Model.Footer)
@@ -219,7 +229,7 @@
 				<!-- end of Top100 code -->
 
 			</div>
-		}
+  }
 	</footer>
 </div>
 
