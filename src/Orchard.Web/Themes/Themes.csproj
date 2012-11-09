@@ -243,6 +243,9 @@
     <Content Include="Mango\Views\Layout.cshtml" />
     <Content Include="Mango\Views\Web.config" />
     <Content Include="Mango\Web.config" />
+    <Content Include="TheThemeMachine\Scripts\sitemapstyler\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
