@@ -276,6 +276,8 @@ textarea {
     margin:0 auto;
 }
 
+
+
 /* Navigation */
 #layout-navigation 
 {
@@ -284,6 +286,46 @@ textarea {
     display: block;
     border-bottom: 1px solid #dbdbdb;
 }
+
+
+/* ============ Start my_nav ======= */
+
+
+a.my_nav_current
+{		
+	color: blue;
+	font-weight: bold;
+}
+
+/*my_nav ul 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+    my_nav ul li
+    {
+        border:1px solid #dbdbdb;
+        background:#f6f6f6;
+        display:block;
+        margin:0 2px -1px 0;
+    }
+    my_nav > ul li.current 
+    {
+        border-bottom: 1px solid #fff;
+        background:#fff;
+    }
+    my_nav ul li a 
+    {
+        padding:0 18px;
+        display:block;
+        color: #333;
+        font-size: 1.077em;
+        text-decoration:none;
+        line-height:24px;
+    }*/
+
+/* ============ End my_nav ======= */
 
 nav ul 
 {
@@ -509,7 +551,7 @@ nav ul.breadcrumb
 
 /* If zones 1, 2 are on */
 .aside-12 #layout-content { width: 600px; }
-.aside-12 .aside-first, .aside-12 .aside-second { width: 180px; }
+.aside-12 .aside-first, .aside-12 .aside-second { width: 300px; }
 .aside-12 .aside-first, .aside-12 .aside-second, .aside-12 #layout-content { float:left; }
 
 /* Tripel Zones*/
