@@ -53,10 +53,20 @@
       <HintPath>..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Services" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TheThemeMachine\ViewModels\City.cs" />
+    <Compile Include="TheThemeMachine\ViewModels\Country.cs" />
+    <Compile Include="TheThemeMachine\ViewModels\ProductFilter.cs" />
+    <Compile Include="TheThemeMachine\ViewModels\CatalogType.cs" />
     <Compile Include="Dark\Filters\LayoutFilter.cs" />
+    <Compile Include="TheThemeMachine\ViewModels\Manufacturer.cs" />
+    <Compile Include="TheThemeMachine\ViewModels\ItemBase.cs" />
+    <Compile Include="TheThemeMachine\ViewModels\ProductType.cs" />
+    <Compile Include="TheThemeMachine\ViewModels\ProductBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TheThemeMachine\ViewModels\ProductViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dark\Content\Images\arrow-submenu.png" />
@@ -135,7 +145,9 @@
     <Content Include="TheThemeMachine\Scripts\LiveInternetCounter.js" />
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\collapsed.gif" />
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\expanded.gif" />
-    <Content Include="TheThemeMachine\Scripts\sitemapstyler\sitemapstyler.css" />
+    <Content Include="TheThemeMachine\Scripts\sitemapstyler\sitemapstyler.css">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\sitemapstyler.js" />
     <Content Include="TheThemeMachine\Styles\Site.css" />
     <Content Include="TheThemeMachine\Theme.png" />
@@ -246,6 +258,7 @@
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="TheThemeMachine\ViewModels\ProductViewModel.cd" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
