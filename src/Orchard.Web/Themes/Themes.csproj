@@ -69,6 +69,12 @@
     <Compile Include="TheThemeMachine\ViewModels\ProductViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Cartridges\ForFlat\FItaqua\Polipropilen1mkm_big.jpg" />
+    <Content Include="Content\Cartridges\ForFlat\FItaqua\Polipropilen1mkm_mid.jpg" />
+    <Content Include="Content\Filters\ForFlat\Osmos\FITaqua\RO-5_big.jpg" />
+    <Content Include="Content\Filters\ForFlat\Osmos\FITaqua\RO-5_mid.jpg" />
+    <Content Include="Content\Filters\ForFlat\Osmos\FITaqua\RO-6_big.jpg" />
+    <Content Include="Content\Filters\ForFlat\Osmos\FITaqua\RO-6_mid.jpg" />
     <Content Include="Dark\Content\Images\arrow-submenu.png" />
     <Content Include="Dark\Content\Images\breadcrumb.bg.png" />
     <Content Include="Dark\Content\Images\breadcrumb.home.png" />
@@ -237,6 +243,7 @@
   <ItemGroup>
     <Content Include="Dark\Content\Web.config" />
     <Content Include="Dark\js\Web.config" />
+    <None Include="Content\Documents\Полезная информация о фильтры для воды.docx" />
     <None Include="Dark\Placement.info" />
     <Content Include="Dark\Styles\Web.config" />
     <Content Include="Dark\Views\Layout-url-HomePage.cshtml" />
@@ -244,6 +251,9 @@
     <Content Include="Dark\Views\LogOn2.cshtml" />
     <Content Include="Dark\Views\Parts\Product.cshtml" />
     <Content Include="Dark\Views\Widget.Wrapper.cshtml" />
+    <None Include="DB_Backup\2012-10-28.bak" />
+    <None Include="DB_Backup\2012-11-03_v1.5.bak" />
+    <None Include="DB_Backup\2012-11-03_v1.6_original.bak" />
     <None Include="Mango\Content\Fonts\Segoe-WPC-Black.eot" />
     <None Include="Mango\Content\Fonts\Segoe-WPC-Light.eot" />
     <None Include="Mango\Content\Fonts\Segoe-WPC.eot" />
@@ -260,6 +270,7 @@
     </Content>
     <None Include="TheThemeMachine\ViewModels\ProductViewModel.cd" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

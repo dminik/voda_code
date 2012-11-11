@@ -131,6 +131,69 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Content Include="App_Data\Dependencies\dependencies.compiled.xml" />
+    <Content Include="App_Data\Dependencies\dependencies.xml" />
+    <Content Include="App_Data\Dependencies\Ionic.Zip.dll" />
+    <Content Include="App_Data\Dependencies\IronRuby.dll" />
+    <Content Include="App_Data\Dependencies\IronRuby.Libraries.dll" />
+    <Content Include="App_Data\Dependencies\Joel.Net.Akismet.dll" />
+    <Content Include="App_Data\Dependencies\Lucene.dll" />
+    <Content Include="App_Data\Dependencies\Lucene.Net.dll" />
+    <Content Include="App_Data\Dependencies\Markdown.dll" />
+    <Content Include="App_Data\Dependencies\MarkdownSharp.dll" />
+    <Content Include="App_Data\Dependencies\Microsoft.Dynamic.dll" />
+    <Content Include="App_Data\Dependencies\Microsoft.Scripting.dll" />
+    <Content Include="App_Data\Dependencies\Microsoft.Scripting.Metadata.dll" />
+    <Content Include="App_Data\Dependencies\NHibernate.Caches.SysCache2.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Alias.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.AntiSpam.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.ArchiveLater.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Autoroute.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Blogs.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.CodeGeneration.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Comments.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.ContentPermissions.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.ContentPicker.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.ContentTypes.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.CustomForms.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.DesignerTools.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Email.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Fields.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Forms.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.ImportExport.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Indexing.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.jQuery.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Lists.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Localization.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Media.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.MediaPicker.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Messaging.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Migrations.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Modules.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.MultiTenancy.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Packaging.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Pages.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Projections.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.PublishLater.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Recipes.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Roles.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Rules.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Scripting.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Scripting.Dlr.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Search.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Setup.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Tags.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.TaskLease.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Themes.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Tokens.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Users.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Warmup.dll" />
+    <Content Include="App_Data\Dependencies\Orchard.Widgets.dll" />
+    <Content Include="App_Data\Dependencies\SysCache.dll" />
+    <Content Include="App_Data\Dependencies\TinyMce.dll" />
+    <Content Include="App_Data\Dependencies\UpgradeTo16.dll" />
+    <Content Include="App_Data\hrestart.txt" />
+    <Content Include="App_Data\Sites\Default\Settings.txt" />
     <Content Include="Config\log4net.config">
       <SubType>Designer</SubType>
     </Content>
@@ -170,10 +233,31 @@
     <Content Include="Config\Sample.Host.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="App_Data\RecipeQueue\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\cache.dat" />
+    <None Include="App_Data\Logs\orchard-debug-2012.11.04.log" />
+    <None Include="App_Data\Logs\orchard-debug-2012.11.05.log" />
+    <None Include="App_Data\Logs\orchard-debug-2012.11.06.log" />
+    <None Include="App_Data\Logs\orchard-debug-2012.11.07.log" />
+    <None Include="App_Data\Logs\orchard-debug-2012.11.08.log" />
+    <None Include="App_Data\Logs\orchard-debug-2012.11.09.log" />
+    <None Include="App_Data\Logs\orchard-debug-2012.11.10.log" />
+    <None Include="App_Data\Logs\orchard-debug-2012.11.11.log" />
+    <None Include="App_Data\Logs\orchard-error-2012.11.04.log" />
+    <None Include="App_Data\Logs\orchard-error-2012.11.05.log" />
+    <None Include="App_Data\Logs\orchard-error-2012.11.06.log" />
+    <None Include="App_Data\Logs\orchard-error-2012.11.07.log" />
+    <None Include="App_Data\Logs\orchard-error-2012.11.08.log" />
+    <None Include="App_Data\Logs\orchard-error-2012.11.09.log" />
+    <None Include="App_Data\Logs\orchard-error-2012.11.10.log" />
+    <None Include="App_Data\Logs\orchard-error-2012.11.11.log" />
+    <None Include="App_Data\Sites\Default\mappings.bin" />
+    <None Include="App_Data\Sites\Default\reports.dat" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
