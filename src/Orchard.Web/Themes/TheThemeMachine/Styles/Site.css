@@ -710,9 +710,14 @@ div#layout-content.group div#content.group div.zone article.content-item div div
 
 
 
+/* Hide div with published date */
+article.content-item.list-category header div.metadata {
+	display: none;
+}
 
 /* CategoryListItem outer block li */  
-div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li {
+/* div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li {  */
+article.content-item.list-category ul li { 
 	display: inline-block;
 	margin: .2em;
     padding:0em;
@@ -724,17 +729,18 @@ div#layout-content.group div#content.group div.zone article.content-item.project
 
 
 /* Label for category list projection */ 
-div#layout-content.group div#content.group div.zone article.content-item.projection-page header h1 {
+article.content-item.list-category header h1 {
 	text-align: center;
 }
 
 /* Image for category list projection */ 
-div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li a div img {
+article.content-item.list-category ul li a div img {
 	width: 100%;
 }
 
 /* Label for category list element */
-div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li a div h1 {
+article.content-item.list-category ul li a div h1 {
 	text-align: center;
 	margin: 0;	
 }
+
