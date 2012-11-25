@@ -231,6 +231,14 @@
       <Name>Orchard.Framework</Name>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\Modules\Orchard.ContentPicker\Orchard.ContentPicker.csproj">
+      <Project>{F301EF7D-F19C-4D83-AA94-CB64F29C037D}</Project>
+      <Name>Orchard.ContentPicker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\Orchard.Media\Orchard.Media.csproj">
+      <Project>{D9A7B330-CD22-4DA1-A95A-8DE1982AD8EB}</Project>
+      <Name>Orchard.Media</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="TheThemeMachine\Views\Pager.cshtml" />
@@ -269,6 +277,9 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="TheThemeMachine\ViewModels\ProductViewModel.cd" />
+    <Content Include="TheThemeMachine\Views\List-ProjectionPage-url-cartridges-action-Contents-Item.cshtml" />
+    <Content Include="TheThemeMachine\Views\Content-ListCategoryElement.cshtml" />
+    <Content Include="TheThemeMachine\Views\Fields.MediaPicker-ListCategoryElement.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

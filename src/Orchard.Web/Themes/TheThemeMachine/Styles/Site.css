@@ -679,3 +679,62 @@ button:focus, .button:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(#ebebeb));
     background:-moz-linear-gradient(top , #e1e1e1, #ebebeb);
 }
+
+
+/* =======================  my ================================ */  
+
+/* CategoryListItem outer div 
+div#layout-content.group div#content.group div.zone article.content-item div div {
+	display: inline-block;
+	margin: 1em;
+    padding:1em;
+    border:1px solid #999;
+}
+
+ Hide div with published data
+div#layout-content.group div#content.group div.zone article.content-item div div div.metadata {
+	display: none;
+}
+
+ Hide label for link 
+div#layout-content.group div#content.group div.zone article.content-item div div article.content-item p.content-picker-field.content-picker-field-link span.name {
+	display: none;
+}
+
+Hide label for link
+div#layout-content.group div#content.group div.zone article.content-item div div article.content-item p.enumeration-field.enumeration-field-category-type {
+	display: none;
+}
+
+ */ 
+
+
+
+
+/* CategoryListItem outer block li */  
+div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li {
+	display: inline-block;
+	margin: .2em;
+    padding:0em;
+    /* border:1px solid #999; */
+	width: 25%;
+	height: 25%;
+	line-height: 1;
+}
+
+
+/* Label for category list projection */ 
+div#layout-content.group div#content.group div.zone article.content-item.projection-page header h1 {
+	text-align: center;
+}
+
+/* Image for category list projection */ 
+div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li a div img {
+	width: 100%;
+}
+
+/* Label for category list element */
+div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li a div h1 {
+	text-align: center;
+	margin: 0;	
+}
