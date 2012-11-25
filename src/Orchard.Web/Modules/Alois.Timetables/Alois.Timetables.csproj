@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{63FBD4D9-E1DA-4A7B-AA6A-D6074FE50867}</ProjectGuid>
+    <ProjectGuid>{71C10C82-1102-4094-BE7F-20323149811E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -18,6 +18,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -157,7 +158,7 @@
     <Content Include="Views\Parts.Timetables.TimetableAppointment.Item.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Alois.EventDate\Alois.EventDate.csproj">
+    <ProjectReference Include="..\Orchard.PublishLater\Orchard.PublishLater.csproj">
       <Project>{C889167C-E52C-4A65-A419-224B3D1B957D}</Project>
       <Name>Alois.EventDate</Name>
     </ProjectReference>
