@@ -26,19 +26,13 @@
 		  my_href = @Url.ItemDisplayUrl(contentItem);			
 	  }
 	}
-
-
-	
-	
-	
 	
 }
 
-<span>@Model.Header.Title</span>
-
-<a href="@my_href" title="@Model.ContentItem.TitlePart.Title">
+<div class="category-list-element-image">
+	<a href="@my_href" title="@Model.ContentItem.TitlePart.Title">
 	
-	<div>
+	
 		@if (Html.IsPicture((string)fieldPicture.Url))
 		{
 				
@@ -48,19 +42,19 @@
 					<text> class="@fieldPicture.Class"</text>
 				}@if (!String.IsNullOrWhiteSpace(fieldPicture.Style))
 				 {
-				 	<text> style="@fieldPicture.Style"</text>
+			 		<text> style="@fieldPicture.Style"</text>
 				 }@if (!String.IsNullOrWhiteSpace(fieldPicture.AlternateText))
 				  {
-				  	<text> alt="@fieldPicture.AlternateText"</text>
+			  		<text> alt="@fieldPicture.AlternateText"</text>
 				  }@if (!String.IsNullOrWhiteSpace(fieldPicture.Alignment))
 				   {
-				   	<text> align="@fieldPicture.Alignment"</text>
+			   		<text> align="@fieldPicture.Alignment"</text>
 				   }@if (fieldPicture.Width > 0)
 					{
 						<text> width="@fieldPicture.Width"</text>
 					}@if (fieldPicture.Height > 0)
 					 {
-					 	<text> height="@fieldPicture.Height"</text>
+				 		<text> height="@fieldPicture.Height"</text>
 					 }/>
 					 
 		}
@@ -69,6 +63,18 @@
 			<a href="@Url.Content(fieldPicture.Url)" class="value">@name</a>
 		}
 		
-		@Display(Model.Header)
-	</div>		
-</a>
+	</a>
+</div>	
+
+<div class="category-list-element-link">
+	@Display(Model.Header)
+</div>			
+
+@*
+<div style="width: 100%; height: 50px; position: absolute; border:1px solid #f30909; ">
+	
+	<a style="width: 100%;  text-align: center; position: absolute; bottom: 0; border:1px solid #c9e91c;">TE TEXTsf TEXTsdfdfsfgs EXTsf TEXTsdf</a>
+
+</div>*@
+
+

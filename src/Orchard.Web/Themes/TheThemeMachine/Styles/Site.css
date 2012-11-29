@@ -272,7 +272,7 @@ textarea {
 #layout-wrapper { }
 
 #layout-header, #layout-featured, #layout-before-main, #layout-main, #layout-footer, #layout-after-main, #layout-tripel {
-    width:960px;
+    width:1263px;
     margin:0 auto;
 }
 
@@ -281,7 +281,7 @@ textarea {
 /* Navigation */
 #layout-navigation 
 {
-    width: 960px;
+    width: 1263px;
     margin: 0 auto;
     display: block;
     border-bottom: 1px solid #dbdbdb;
@@ -719,28 +719,84 @@ article.content-item.list-category header div.metadata {
 /* div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li {  */
 article.content-item.list-category ul li { 
 	display: inline-block;
-	margin: .2em;
-    padding:0em;
-    /* border:1px solid #999; */
+	margin: 0em 2em 0em 0em;
+    padding:0em;   
 	width: 25%;
-	height: 25%;
+	height: 225px;
 	line-height: 1;
+	vertical-align: top;
+	position: relative;
+	
 }
 
 
 /* Label for category list projection */ 
 article.content-item.list-category header h1 {
 	text-align: center;
+	
+}
+
+/* Div for picture and label */
+article.content-item.list-category ul li div 
+{
+	width: 100%;
+	vertical-align: bottom;
+	position: absolute;
+}
+
+article.content-item.list-category ul li div a 
+{
+	width: 100%;
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 0;
+}
+
+
+/* Image for category list projection */ 
+article.content-item.list-category ul li div.category-list-element-image 
+{
+	margin: 0;
+	height: 170px;
+	
 }
 
 /* Image for category list projection */ 
-article.content-item.list-category ul li a div img {
+article.content-item.list-category ul li div img {
+	width: 100%;
+	margin: 0;
+	
+}
+
+
+/* Label for category list element */
+article.content-item.list-category ul li div.category-list-element-link {
+	
+	margin: 0;		
+	height: 50px;
+	position: absolute;
+	bottom: 0;	
 	width: 100%;
 }
 
+article.content-item.list-category ul li div.category-list-element-link h1 
+{
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: 100%;	
+	position: absolute;	
+	bottom: 0;
+	
+}
+
 /* Label for category list element */
-article.content-item.list-category ul li a div h1 {
-	text-align: center;
-	margin: 0;	
+article.content-item.list-category ul li div.category-list-element-link h1 a {	
+	margin: 0;
+	width: 100%;  
+	text-align: center; 
+	position: absolute; 
+	bottom: 0;
+	
 }
 
