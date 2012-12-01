@@ -11,9 +11,18 @@ namespace Orchard.ContentTypes {
         {
             builder.Add(T("Content"),
                         menu => menu
-                                    .Add(T("Content Types"), "3", item => item.Action("Index", "Admin", new {area = "Orchard.ContentTypes"}).LocalNav())
-                                    .Add(T("Content Parts"), "4", item => item.Action("ListParts", "Admin", new {area = "Orchard.ContentTypes"}).LocalNav()));
+                                    .Add(T("Content Types"), "3", item => item.Action("Index", "Admin", new {area = "Orchard.ContentTypes"}).LocalNav())                                    
+									.Add(T("Content Parts"), "5", item => item.Action("ListParts", "Admin", new { area = "Orchard.ContentTypes" }).LocalNav()));
 
+			builder.AddImageSet("Content Parts")
+				.Add(this.T("Content Parts"), "1",
+					menu => menu
+									.Add(T("Content Parts"), "1", item => item.Action("ListParts", "Admin", new { area = "Orchard.ContentTypes" }).LocalNav()));
+
+			builder.AddImageSet("Content Types")
+				.Add(this.T("Content Types"), "1",
+					menu => menu
+									.Add(T("Content Type"), "1", item => item.Action("Index", "Admin", new { area = "Orchard.ContentTypes" }).LocalNav()));
         }
     }
 }
