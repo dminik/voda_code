@@ -1045,8 +1045,8 @@ html.dyn #submit-pager, html.dyn .apply-bulk-actions-auto { display:none; }
 /* Routable */
 .permalink input.text {
     background:transparent;
-    border-color:#EAE9D9;
-    border-style:dashed;
+    border-color:#171602;
+    border-style:solid;
     margin-left:0;
     margin-right:2em;
     width:350px;
