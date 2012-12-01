@@ -67,3 +67,4 @@ buildtasks/
 
 
 src/Orchard.Web/App_Data/Dependencies/
+*App_Data/Dependencies/*
