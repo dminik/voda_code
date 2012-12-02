@@ -29,52 +29,69 @@
 	
 }
 
+<div class="category-list-element">
+	<div class="category-list-element-image">
+		<a href="@my_href" title="@Model.ContentItem.TitlePart.Title">
+			@Display(Model.zone_Picture)
+		</a>
+	</div>
+
+	<div class="category-list-element-link">
+		@Display(Model.zone_Link)
+	</div>
+</div>
+
+
+
+
+@*
 <div class="category-list-element-image">
+	
+
 	<a href="@my_href" title="@Model.ContentItem.TitlePart.Title">
-	
-	
-		@if (Html.IsPicture((string)fieldPicture.Url))
-		{
-				
-			<img src="@Url.Content(fieldPicture.Url)"
-				@if (!String.IsNullOrWhiteSpace(fieldPicture.Class))
-				{
-					<text> class="@fieldPicture.Class"</text>
-				}@if (!String.IsNullOrWhiteSpace(fieldPicture.Style))
-				 {
-			 		<text> style="@fieldPicture.Style"</text>
-				 }@if (!String.IsNullOrWhiteSpace(fieldPicture.AlternateText))
-				  {
-			  		<text> alt="@fieldPicture.AlternateText"</text>
-				  }@if (!String.IsNullOrWhiteSpace(fieldPicture.Alignment))
-				   {
-			   		<text> align="@fieldPicture.Alignment"</text>
-				   }@if (fieldPicture.Width > 0)
-					{
-						<text> width="@fieldPicture.Width"</text>
-					}@if (fieldPicture.Height > 0)
-					 {
-				 		<text> height="@fieldPicture.Height"</text>
-					 }/>
-					 
-		}
-		else if (!String.IsNullOrWhiteSpace(fieldPicture.Url))
-		{
-			<a href="@Url.Content(fieldPicture.Url)" class="value">@name</a>
-		}
 		
+		
+		
+		
+
+		<p class="media-picker-field media-picker-field-@name.HtmlClassify()">
+		
+			@if (Html.IsPicture((string)fieldPicture.Url))
+			{
+				
+				<img src="@Url.Content(fieldPicture.Url)"
+					@if (!String.IsNullOrWhiteSpace(fieldPicture.Class))
+					{
+						<text> class="@fieldPicture.Class"</text>
+					}@if (!String.IsNullOrWhiteSpace(fieldPicture.Style))
+					 {
+					 	<text> style="@fieldPicture.Style"</text>
+					 }@if (!String.IsNullOrWhiteSpace(fieldPicture.AlternateText))
+					  {
+					  	<text> alt="@fieldPicture.AlternateText"</text>
+					  }@if (!String.IsNullOrWhiteSpace(fieldPicture.Alignment))
+					   {
+					   	<text> align="@fieldPicture.Alignment"</text>
+					   }@if (fieldPicture.Width > 0)
+						{
+							<text> width="@fieldPicture.Width"</text>
+						}@if (fieldPicture.Height > 0)
+						 {
+						 	<text> height="@fieldPicture.Height"</text>
+						 }/>
+					 
+			}
+			else if (!String.IsNullOrWhiteSpace(fieldPicture.Url))
+			{
+				<a href="@Url.Content(fieldPicture.Url)" class="value">@name</a>
+			}
+		
+		</p>
 	</a>
 </div>	
 
 <div class="category-list-element-link">
-	@Display(Model.Header)
+	<a href="@my_href">@Model.ContentItem.TitlePart.Title</a>
 </div>			
 
-@*
-<div style="width: 100%; height: 50px; position: absolute; border:1px solid #f30909; ">
-	
-	<a style="width: 100%;  text-align: center; position: absolute; bottom: 0; border:1px solid #c9e91c;">TE TEXTsf TEXTsdfdfsfgs EXTsf TEXTsdf</a>
-
-</div>*@
-
-
+*@

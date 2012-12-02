@@ -278,6 +278,8 @@
     </Content>
     <None Include="TheThemeMachine\ViewModels\ProductViewModel.cd" />
     <Content Include="TheThemeMachine\Views\Content-ListCategoryElement.cshtml" />
+    <Content Include="TheThemeMachine\Views\Content-Product.Detail.cshtml" />
+    <Content Include="TheThemeMachine\Views\Content-myTestContentType.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

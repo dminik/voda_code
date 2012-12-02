@@ -1,0 +1,71 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    if (Model.Title != null) {
+        Layout.Title = Model.Title;
+    }
+    
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+
+<div>
+<article class="content-item @contentTypeClassName">
+	
+	<div>
+		Etalon:
+		<div>@Display(Model.Content)</div>
+	</div> 
+	
+	
+	
+
+
+	<div>
+		Need to have xxxxxxxxx between fields. Fields should be displayed by their native templates. 
+	</div> 
+	
+	<div>
+		 @Display(@Model.zone_myTextXXX)
+	</div> 
+	xxxxxxxxx
+	<div>
+		 @Display(@Model.zone_myMediaPiker)
+	</div> 
+	
+	
+	
+
+	
+
+	@*<header>
+		@Display(Model.Header)
+		@if (Model.Meta != null) {
+			<div class="metadata">
+				@Display(Model.Meta)
+			</div>
+		}
+	</header>*@
+	
+	
+	@*@Display(Model.Content)
+	sdfg
+	@Display(Model.ContentItem.​myTestContentType.Fields[0])
+	235234
+	
+	
+	@Display(Model.ContentItem.myTestContentType.myTextXXX.Value)
+	
+	########
+	@Display(Model.ContentItem.myTestContentType.myMediaPiker)*@
+
+	
+	
+	
+
+	@*@if(Model.Footer != null) {
+		<footer>
+			@Display(Model.Footer)
+		</footer>
+	}*@
+</article>
+
+</div>

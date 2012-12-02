@@ -709,12 +709,6 @@ div#layout-content.group div#content.group div.zone article.content-item div div
  */ 
 
 
-
-/* Hide div with published date */
-article.content-item.list-category header div.metadata {
-	display: none;
-}
-
 /* CategoryListItem outer block li */  
 /* div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li {  */
 article.content-item.list-category ul li { 
@@ -766,6 +760,16 @@ article.content-item.list-category ul li div img {
 	width: 100%;
 	margin: 0;
 	
+}
+
+
+
+
+
+
+/* Hide label for link */
+article.content-item.list-category ul li div.category-list-element-link p.content-picker-field span.name {
+	display: none;
 }
 
 
