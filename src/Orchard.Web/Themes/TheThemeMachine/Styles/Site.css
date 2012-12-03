@@ -733,19 +733,12 @@ article.content-item.list-category header h1 {
 /* Div for picture and label */
 article.content-item.list-category ul li div 
 {
+	margin: 0;
+	height: 225px;
 	width: 100%;
 	vertical-align: bottom;
 	position: absolute;
 }
-
-article.content-item.list-category ul li div a 
-{
-	width: 100%;
-	vertical-align: bottom;
-	position: absolute;
-	bottom: 0;
-}
-
 
 /* Image for category list projection */ 
 article.content-item.list-category ul li div.category-list-element-image 
@@ -755,8 +748,25 @@ article.content-item.list-category ul li div.category-list-element-image
 	
 }
 
+/* a around picture*/
+article.content-item.list-category ul li div.category-list-element div.category-list-element-image a 
+{
+	width: 100%;	
+	position: absolute;
+	bottom: 0;
+}
+
+
 /* Image for category list projection */ 
-article.content-item.list-category ul li div img {
+article.content-item.list-category ul li div.category-list-element div.category-list-element-image a p.media-picker-field {
+	width: 100%;
+	margin: 0;
+	
+}
+
+
+/* Image for category list projection */ 
+article.content-item.list-category ul li div.category-list-element div.category-list-element-image a p.media-picker-field img {
 	width: 100%;
 	margin: 0;
 	
@@ -774,7 +784,7 @@ article.content-item.list-category ul li div.category-list-element-link p.conten
 
 
 /* Label for category list element */
-article.content-item.list-category ul li div.category-list-element-link {
+article.content-item.list-category ul li div.category-list-element div.category-list-element-link {
 	
 	margin: 0;		
 	height: 50px;
@@ -783,7 +793,7 @@ article.content-item.list-category ul li div.category-list-element-link {
 	width: 100%;
 }
 
-article.content-item.list-category ul li div.category-list-element-link h1 
+article.content-item.list-category ul li div.category-list-element div.category-list-element-link p.content-picker-field
 {
 	margin: 0;
 	padding: 0;
@@ -794,8 +804,18 @@ article.content-item.list-category ul li div.category-list-element-link h1
 	
 }
 
+article.content-item.list-category ul li div.category-list-element div.category-list-element-link p.content-picker-field span 
+{
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: 100%;	
+	position: absolute;	
+	bottom: 0;
+}
+
 /* Label for category list element */
-article.content-item.list-category ul li div.category-list-element-link h1 a {	
+article.content-item.list-category ul li div.category-list-element div.category-list-element-link p.content-picker-field span a {	
 	margin: 0;
 	width: 100%;  
 	text-align: center; 
