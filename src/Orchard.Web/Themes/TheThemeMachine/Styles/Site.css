@@ -824,3 +824,37 @@ article.content-item.list-category ul li div.category-list-element div.category-
 	
 }
 
+h1#branding a {
+		font-size: 50%;
+}
+
+
+
+
+
+/*========== Product ================= */
+
+
+article.content-item.product {
+	border: 1px solid;		
+}
+
+article.content-item.product div {
+	border: 1px solid;	
+	padding: 1em;
+	margin: 1em;
+}
+
+article.content-item.product div.topOfProduct {
+	
+	
+}
+
+article.content-item.product div.middleOfProduct {
+
+	
+}
+
+article.content-item.product div.bottomOfProduct {
+	
+}

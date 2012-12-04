@@ -5,8 +5,8 @@
     }
     
     var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
-	
-	
+
+	var prodFields = Model.ContentItem.Product.ProductBase;
 	
 }
 
@@ -14,8 +14,50 @@
 
 <article class="content-item @contentTypeClassName">
 	
+	<div class="topOfProduct">
+		
+		@Display(prodFields.MiddleName)
 
-	<header>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<div class="middleOfProduct">
+		middleOfProduct
+	</div>
+	
+	<div class="bottomOfProduct">
+		bottomOfProduct
+	</div>
+	
+	
+	
+	
+	
+
+
+	@*<header>
 		
 		@Display(Model.Header)
 
@@ -39,5 +81,7 @@
 		</footer>
 	 
 	 
-    }
+    }*@
 </article>
+
+<div>@Display(Model.Content)</div>
