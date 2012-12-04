@@ -56,7 +56,6 @@ _ReSharper.XLN
 # ignore temp directories
 [Tt]emp/
 [Tt]mp/
-Dependencies/
 
 #winword temp files
 ~$*.docx
@@ -66,7 +65,7 @@ build/
 buildtasks/
 
 
-App_Data/Dependencies/
+
 src/Orchard.Web/App_Data/Dependencies/
-*App_Data/Dependencies/*
-src/Orchard.Web/App_Data/Dependencies
+
+
