@@ -683,35 +683,16 @@ button:focus, .button:focus {
 
 /* =======================  my ================================ */  
 
-/* CategoryListItem outer div 
-div#layout-content.group div#content.group div.zone article.content-item div div {
-	display: inline-block;
-	margin: 1em;
-    padding:1em;
-    border:1px solid #999;
-}
 
- Hide div with published data
-div#layout-content.group div#content.group div.zone article.content-item div div div.metadata {
-	display: none;
+/* Label for category list projection */ 
+.list-category header h1 {
+	text-align: center;
+	
 }
-
- Hide label for link 
-div#layout-content.group div#content.group div.zone article.content-item div div article.content-item p.content-picker-field.content-picker-field-link span.name {
-	display: none;
-}
-
-Hide label for link
-div#layout-content.group div#content.group div.zone article.content-item div div article.content-item p.enumeration-field.enumeration-field-category-type {
-	display: none;
-}
-
- */ 
 
 
 /* CategoryListItem outer block li */  
-/* div#layout-content.group div#content.group div.zone article.content-item.projection-page ul li {  */
-article.content-item.list-category ul li { 
+.list-category ul li { 
 	display: inline-block;
 	margin: 0em 2em 0em 0em;
     padding:0em;   
@@ -723,15 +704,8 @@ article.content-item.list-category ul li {
 	
 }
 
-
-/* Label for category list projection */ 
-article.content-item.list-category header h1 {
-	text-align: center;
-	
-}
-
 /* Div for picture and label */
-article.content-item.list-category ul li div 
+.list-category ul li div 
 {
 	margin: 0;
 	height: 225px;
@@ -741,7 +715,7 @@ article.content-item.list-category ul li div
 }
 
 /* Image for category list projection */ 
-article.content-item.list-category ul li div.category-list-element-image 
+.list-category ul li div.category-list-element-image 
 {
 	margin: 0;
 	height: 170px;
@@ -749,7 +723,7 @@ article.content-item.list-category ul li div.category-list-element-image
 }
 
 /* a around picture*/
-article.content-item.list-category ul li div.category-list-element div.category-list-element-image a 
+.list-category ul li div.category-list-element div.category-list-element-image a 
 {
 	width: 100%;	
 	position: absolute;
@@ -758,7 +732,7 @@ article.content-item.list-category ul li div.category-list-element div.category-
 
 
 /* Image for category list projection */ 
-article.content-item.list-category ul li div.category-list-element div.category-list-element-image a p.media-picker-field {
+.list-category ul li div.category-list-element div.category-list-element-image a p.media-picker-field {
 	width: 100%;
 	margin: 0;
 	
@@ -766,7 +740,7 @@ article.content-item.list-category ul li div.category-list-element div.category-
 
 
 /* Image for category list projection */ 
-article.content-item.list-category ul li div.category-list-element div.category-list-element-image a p.media-picker-field img {
+.list-category ul li div.category-list-element div.category-list-element-image a p.media-picker-field img {
 	width: 100%;
 	margin: 0;
 	
@@ -835,26 +809,58 @@ h1#branding a {
 /*========== Product ================= */
 
 
-article.content-item.product {
+.content-item.product {
 	border: 1px solid;		
 }
 
-article.content-item.product div {
+.content-item.product div {
 	border: 1px solid;	
-	padding: 1em;
-	margin: 1em;
+	padding: 0em;
+	margin: 0em;
+	text-align: center;
 }
 
-article.content-item.product div.topOfProduct {
+.content-item.product div.topOfProduct {
 	
 	
 }
 
-article.content-item.product div.middleOfProduct {
+.content-item.product div.topOfProduct div.leftOftopOfProduct {		
+	display: inline-block;
+	width: 30%;
+}
+
+.content-item.product div.topOfProduct div.leftOftopOfProduct div.Prod_Picture_mid {
+	
+}
+
+.content-item.product div.topOfProduct div.leftOftopOfProduct div.Prod_Picture_mid p.media-picker-field img {
+	width: 100%;
+	margin: 0;
+	height: 170px;
+}
+
+
+.content-item.product div.topOfProduct div.rightOftopOfProduct {
+	
+	display: inline-block;
+	width: 68%;
+}
+
+
+
+
+
+
+
+
+
+
+.content-item.product div.middleOfProduct {
 
 	
 }
 
-article.content-item.product div.bottomOfProduct {
+.content-item.product div.bottomOfProduct {
 	
 }
