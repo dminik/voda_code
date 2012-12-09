@@ -20,8 +20,12 @@
 			<div>leftOftopOfProduct</div>
 			<div class="Prod_MiddleName">@Display(prodFields.MiddleName.Value)</div>
 			<div class="Prod_Picture_mid">@Display(Model.zone_Picture_mid)</div>
-			
-			
+			<a class="Increase" href="#">Увеличить</a>
+			<div class="Price">
+				<span class="PriceLabel">Цена:</span>
+				<span class="PriceDigits">@Display(prodFields.Price.Value)</span><span class="PriceDot">.-</span><span class="PriceCurrency"> Грн.</span>
+			</div>
+			<input class="addtocart_button" type="submit" title="Купить" value="Купить" />
 
 		</div>
 		
@@ -95,4 +99,4 @@
     }*@
 </article>
 
-<div>@Display(Model.Content)</div>
+<div class="oldContent">@Display(Model.Content)</div>

@@ -821,13 +821,18 @@ h1#branding a {
 }
 
 .content-item.product div.topOfProduct {
-	
+	height: 350px;
 	
 }
 
-.content-item.product div.topOfProduct div.leftOftopOfProduct {		
-	display: inline-block;
+.content-item.product div.topOfProduct div.leftOftopOfProduct {
+	float: left;
 	width: 30%;
+	height: 100%;
+}
+
+.content-item.product div.topOfProduct div.leftOftopOfProduct .Prod_MiddleName {
+	font-size: 1.5em;
 }
 
 .content-item.product div.topOfProduct div.leftOftopOfProduct div.Prod_Picture_mid {
@@ -840,16 +845,23 @@ h1#branding a {
 	height: 170px;
 }
 
+.Increase {
+	display: block;	
+}
 
-.content-item.product div.topOfProduct div.rightOftopOfProduct {
-	
-	display: inline-block;
-	width: 68%;
+
+
+.PriceDigits, .PriceDot {
+	font-size: 3em;
+	color: red;
 }
 
 
 
 
+.content-item.product div.topOfProduct div.rightOftopOfProduct {		
+	margin-left:30%;
+}
 
 
 
@@ -863,4 +875,11 @@ h1#branding a {
 
 .content-item.product div.bottomOfProduct {
 	
+}
+
+
+
+
+.oldContent {
+	clear: both;
 }
