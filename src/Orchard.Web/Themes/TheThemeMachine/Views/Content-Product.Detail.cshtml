@@ -1,4 +1,6 @@
 ﻿@using Orchard.Utility.Extensions;
+@using Contrib.Taxonomies.Models
+@using Orchard.ContentManagement.Utilities
 @{
     if (Model.Title != null) {
         Layout.Title = Model.Title;
@@ -7,7 +9,11 @@
     var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
 
 	var prodFields = Model.ContentItem.Product.ProductBase;
-	
+
+	var vendor = prodFields.Vendor.Terms as LazyField<IEnumerable<TermPart>>;
+	var vendorName = vendor.Value.First().Name;
+
+	var countryName = (prodFields.Country.Terms as LazyField<IEnumerable<TermPart>>).Value.First().Name;	
 }
 
 
@@ -26,12 +32,23 @@
 				<span class="PriceDigits">@Display(prodFields.Price.Value)</span><span class="PriceDot">.-</span><span class="PriceCurrency"> Грн.</span>
 			</div>
 			<input class="addtocart_button" type="submit" title="Купить" value="Купить" />
-
 		</div>
 		
 
 		<div class="rightOftopOfProduct">
 			<div>rightOftopOfProduct</div>
+			
+			<div class="ProdProperties">
+				<div class="Vendor">@Display(vendorName) (<span class="Country">@Display(countryName)</span>)</div>
+				
+				@if (prodFields.Obezzhelezivanie.Value == "Да")
+	{
+					<div class="Obezzhelezivanie" > Обезжеленивание: @Display(prodFields.Obezzhelezivanie.Value)</div>
+	}
+	@*
+				<div class="StepsFiltering">Ступеней фильтрации: @Display(prodFields.StepsFiltering.Value)</div>*@
+			</div>
+
 		</div>	
 		
 		
