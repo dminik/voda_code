@@ -148,6 +148,16 @@
     <Content Include="TheAdmin\Styles\images\menuOpen.gif" />
     <Content Include="TheAdmin\Styles\images\menuOpenHover.gif" />
     <Content Include="TheAdmin\Styles\images\vinesBackgroundBottom.gif" />
+    <Content Include="TheThemeMachine\images\default\tab.png" />
+    <Content Include="TheThemeMachine\images\default\tab_grep.png" />
+    <Content Include="TheThemeMachine\images\default\tab_hover.png" />
+    <Content Include="TheThemeMachine\images\default\tab_hover_grep.png" />
+    <Content Include="TheThemeMachine\images\default\tab_right.png" />
+    <Content Include="TheThemeMachine\images\default\tab_right_hover.png" />
+    <Content Include="TheThemeMachine\images\default\tab_right_sel.png" />
+    <Content Include="TheThemeMachine\images\default\tab_sel.png" />
+    <Content Include="TheThemeMachine\images\default\tab_sel_grep.png" />
+    <Content Include="TheThemeMachine\images\mbTabset.jpg" />
     <Content Include="TheThemeMachine\Scripts\LiveInternetCounter.js" />
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\collapsed.gif" />
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\expanded.gif" />
@@ -155,6 +165,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\sitemapstyler.js" />
+    <Content Include="TheThemeMachine\Styles\mbTabset.css" />
     <Content Include="TheThemeMachine\Styles\Site.css" />
     <Content Include="TheThemeMachine\Theme.png" />
     <Content Include="TheThemeMachine\Theme.txt" />
@@ -231,6 +242,10 @@
       <Name>Orchard.Framework</Name>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\Modules\Contrib.Taxonomies\Contrib.Taxonomies.csproj">
+      <Project>{E649EA64-D213-461B-87F7-D67035801443}</Project>
+      <Name>Contrib.Taxonomies</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Modules\Orchard.ContentPicker\Orchard.ContentPicker.csproj">
       <Project>{F301EF7D-F19C-4D83-AA94-CB64F29C037D}</Project>
       <Name>Orchard.ContentPicker</Name>
@@ -276,6 +291,7 @@
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="TheThemeMachine\images\master.psd" />
     <None Include="TheThemeMachine\ViewModels\ProductViewModel.cd" />
     <Content Include="TheThemeMachine\Views\Content-ListCategoryElement.cshtml" />
     <Content Include="TheThemeMachine\Views\Content-Product.Detail.cshtml" />

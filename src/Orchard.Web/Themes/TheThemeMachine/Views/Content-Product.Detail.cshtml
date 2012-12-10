@@ -20,47 +20,37 @@
 
 <article class="content-item @contentTypeClassName">
 	
-	<div class="topOfProduct">
+	<div id="topOfProduct">
 		
 		<div class="leftOftopOfProduct">
 			<div>leftOftopOfProduct</div>
 			<div class="Prod_MiddleName">@Display(prodFields.MiddleName.Value)</div>
 			<div class="Prod_Picture_mid">@Display(Model.zone_Picture_mid)</div>
 			<a class="Increase" href="#">Увеличить</a>
-			<div class="Price">
-				<span class="PriceLabel">Цена:</span>
-				<span class="PriceDigits">@Display(prodFields.Price.Value)</span><span class="PriceDot">.-</span><span class="PriceCurrency"> Грн.</span>
+			<div id="Price">
+				<span id="PriceLabel">Цена:</span>
+				<span id="PriceDigits">@Display(prodFields.Price.Value)</span><span id="PriceDot">.-</span><span id="PriceCurrency"> Грн.</span>
 			</div>
-			<input class="addtocart_button" type="submit" title="Купить" value="Купить" />
+			<input id="buttonBuy" type="submit" title="Купить" value="Купить" />
 		</div>
 		
 
 		<div class="rightOftopOfProduct">
 			<div>rightOftopOfProduct</div>
 			
-			<div class="ProdProperties">
-				<div class="Vendor">@Display(vendorName) (<span class="Country">@Display(countryName)</span>)</div>
+			<div id="ProdProperties">
+				<div id="Vendor">@Display(vendorName) (<span id="Country">@Display(countryName)</span>)</div>
 				
 				@if (prodFields.Obezzhelezivanie.Value == "Да")
-	{
-					<div class="Obezzhelezivanie" > Обезжеленивание: @Display(prodFields.Obezzhelezivanie.Value)</div>
-	}
-	@*
-				<div class="StepsFiltering">Ступеней фильтрации: @Display(prodFields.StepsFiltering.Value)</div>*@
+				{
+					<div id="Obezzhelezivanie" > Обезжеленивание: @Display(prodFields.Obezzhelezivanie.Value)</div>
+				}
+	
+				<div id="StepsFiltering">Ступеней фильтрации: @Display(prodFields.StepsFiltering.Value)</div>
 			</div>
 
 		</div>	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
+				
 	</div>
 	
 	
@@ -72,48 +62,81 @@
 	
 	
 	
-	@*
-	
-
-	<div class="middleOfProduct">
-		middleOfProduct
-	</div>
-	
-	<div class="bottomOfProduct">
-		bottomOfProduct
-	</div>
-	
-	
-	*@
 	
 	
 
-
-	@*<header>
+	<div id="middleOfProduct">
 		
-		@Display(Model.Header)
 
-		@if (Model.Meta != null) {
-			<div class="metadata">
-				@Display(Model.Meta)
-			</div>
-		}
-	</header>
+		<div class="tabset" id="tabset1">			
+			<a id="a" class="tab sel block 	{content:'cont_1'}"										>Описание</a>			
+			<a id="b" class="tab block 		{content:'cont_2', ajaxContent:'yourUrl',ajaxData:''}"	>Условия заказа</a>			
+			<a id="c" class="tab block		{content:'cont_3'}"										>Отзывы</a>
+		</div>
+
+		<!-- tab contents --> 
+		<div id="cont_1">
+			<h3>
+				Шунгит - это природный минерал с организованной определенным образом кристаллической решеткой, в основе которой - углерод. Углерод это основа жизни на Земле. Происхождение шунгитов, геологический возраст которых более 2 млрд. лет, до сих пор не разгадано. Есть гипотеза, что шунгиты - это остатки планеты Фаэтон, некогда существовавшей в нашей солнечной системе. Эти минералы существуют лишь в одной точке нашей Земли. Причем, в виде комочков - «глобул». Именно эти глобулы углеродного вещества, выходя в воду, преобразуют, структурируют молекулы воды, придавая ей целебные свойства.
+			</h3>
+		</div>
+		<div id="cont_2">
+			<h3>
+				<p><img alt="alt" src="http://filtry.org.ua/images/stories/fitafilter/ff1l.jpg" style="float: left; margin-left: 5px; margin-right: 5px;"/><span style="font-size:20px;">Доставка и установка:</span></p><ul>
+																																																						 	<li>
+																																																								<span style="font-size:16px;">Доставка и установка по Киеву и Днепропетровску БЕСПЛАТНО</span></li>
+																																																						 	<li>
+																																																								<span style="font-size:16px;">Доставка в регионы осуществляется БЕСПЛАТНО автоперевозчиками (Новая Почта, Ин-Тайм, Автолюкс и др.), наложенным платежом (оплата после получения на складе автоперевозчика)</span></li>
+																																																						 </ul><p>&nbsp;	</p><p><img alt="alt" src="http://filtry.org.ua/images/stories/fitafilter/ff1l.jpg" style="float: left; margin-left: 5px; margin-right: 5px;"><span style="font-size:20px;">Как заказать установку фильтра?</span></p><p>Вы можете заказать установку фильтра на удобное для Вас время. Заказы принимаются в телефоном режиме или через сайт. После получения заказа в электронном виде наш менеджер свяжется с Вами в течении 10-15 минут для согласования время монтажа.</p>
+			</h3>
+		</div>
+		<div id="cont_3">
+			<h3>Комментарии<a class="rss" href="/feed/com_virtuemart/1048.html?ml=3&amp;mlt=system&amp;tmpl=component" title="RSS лента комментариев этой записи" target="_blank" rev="ml" onclick="return nn_hs.htmlExpand(this, { objectType:'iframe',outlineType:'rounded-black',expandDuration:500,restoreDuration:500,width:800,height:700 } )">&nbsp;</a><a class="refresh" href="#" title="Обновить список комментариев" onclick="jcomments.showPage(1048,'com_virtuemart',0);return false;">&nbsp;</a></h4>
+<div id="comments-list" class="comments-list">
+        <div class="even" id="comment-item-189"><div class="roundbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-189">
+<a href="#" class="vote-good" title="Хороший комментарий!" onclick="jcomments.voteComment(189, 1);return false;"></a><a href="#" class="vote-poor" title="Плохой комментарий!" onclick="jcomments.voteComment(189, -1);return false;"></a>
+<span class="vote-none">0</span>
+	</span>
+</span>
+<a class="comment-anchor" href="#comment-189" id="comment-189">#2</a>
+<span class="comment-author">admin</span>
+<span class="comment-date">05.12.2012 17:21</span>
+<div class="comment-body" id="comment-body-189"><span class="quote">Цитирую Семен:</span><blockquote>Написано, что новинка-значит буду брать. В моем понимании новое- лучшее)). Тем более с шунгитом давно хотел фильтр найти. Записался на установку на выходные. Ждите от меня комментарий о фильтрe и о воде после это фильтра. :)</blockquote><br>C нетерпение ждем Ваш отзыв :))<br>C уважением, Ирина</div>
+<span class="comments-buttons">
+	<a href="#" onclick="jcomments.quoteComment(189); return false;">Цитировать</a>
+</span>
+</div><div class="clear"></div>
+</div>
+</div>
+        <div class="odd" id="comment-item-188"><div class="roundbox">
+<div class="comment-box">
+<span class="comments-vote">
+	<span id="comment-vote-holder-188">
+		<a href="#" class="vote-good" title="Хороший комментарий!" onclick="jcomments.voteComment(188, 1);return false;"></a><a href="#" class="vote-poor" title="Плохой комментарий!" onclick="jcomments.voteComment(188, -1);return false;"></a>
+		<span class="vote-none">0</span>
+	</span>
+</span>
+</div></div></div></div>
+</h3>
+		</div>
+
+
+	</div>
+	
+	<div id="bottomOfProduct">
+		<div id="AdditionalProductsLabel">
+			Сопутствующие товары
+		</div>
+	</div>
+	
+	
+	
 	
 	
 
-	@Display(Model.Content)
-	
-	
-
-	@if(Model.Footer != null) {
-	 	 
-		<footer>
-			@Display(Model.Footer)
-		</footer>
-	 
-	 
-    }*@
 </article>
 
 <div class="oldContent">@Display(Model.Content)</div>

@@ -683,11 +683,17 @@ button:focus, .button:focus {
 
 /* =======================  my ================================ */  
 
+p.media-picker-field {
+	margin: 0;	
+}
+
+p.media-picker-field img {	
+	vertical-align: bottom;
+}
 
 /* Label for category list projection */ 
 .list-category header h1 {
-	text-align: center;
-	
+	text-align: center;	
 }
 
 
@@ -820,26 +826,26 @@ h1#branding a {
 	text-align: center;
 }
 
-.content-item.product div.topOfProduct {
+.content-item.product div#topOfProduct {
 	height: 350px;
 	
 }
 
-.content-item.product div.topOfProduct div.leftOftopOfProduct {
+.content-item.product div#topOfProduct div.leftOftopOfProduct {
 	float: left;
 	width: 30%;
 	height: 100%;
 }
 
-.content-item.product div.topOfProduct div.leftOftopOfProduct .Prod_MiddleName {
+.content-item.product div#topOfProduct div.leftOftopOfProduct .Prod_MiddleName {
 	font-size: 2.5em;
 }
 
-.content-item.product div.topOfProduct div.leftOftopOfProduct div.Prod_Picture_mid {
+.content-item.product div#topOfProduct div.leftOftopOfProduct div.Prod_Picture_mid {
 	
 }
 
-.content-item.product div.topOfProduct div.leftOftopOfProduct div.Prod_Picture_mid p.media-picker-field img {
+.content-item.product div#topOfProduct div.leftOftopOfProduct div.Prod_Picture_mid p.media-picker-field img {
 	width: 100%;
 	margin: 0;
 	height: 170px;
@@ -849,7 +855,11 @@ h1#branding a {
 	display: block;	
 }
 
-.PriceDigits, .PriceDot {
+div#Price {
+	margin: 1em 0 1em 0;
+}
+
+#PriceDigits, #PriceDot {
 	font-size: 3em;
 	color: red;
 }
@@ -857,15 +867,15 @@ h1#branding a {
 
 
 
-.content-item.product div.topOfProduct div.rightOftopOfProduct {		
+.content-item.product div#topOfProduct div.rightOftopOfProduct {		
 	margin-left:30%;
 }
 
-.content-item.product div.topOfProduct div.rightOftopOfProduct .ProdProperties {
+.content-item.product div#topOfProduct div.rightOftopOfProduct #ProdProperties {
 	margin: 1em;
 }
 
-.content-item.product div.topOfProduct div.rightOftopOfProduct .ProdProperties>div {
+.content-item.product div#topOfProduct div.rightOftopOfProduct #ProdProperties>div {
 	display: list-item;
 	text-align: left;	
 	margin-left: 2em;
@@ -880,11 +890,40 @@ h1#branding a {
 
 
 
-.content-item.product div.middleOfProduct {	
+.content-item.product div#middleOfProduct 	
+{
+	margin: 2em 0 2em 0;
 }
 
-.content-item.product div.bottomOfProduct {	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-item.product div#bottomOfProduct 	
+{
+	margin: 2em 0 2em 0;
 }
+
+.content-item.product div#bottomOfProduct #AdditionalProductsLabel {
+	background-color: skyblue;
+	font-size: 2em;
+}
+
 
 
 

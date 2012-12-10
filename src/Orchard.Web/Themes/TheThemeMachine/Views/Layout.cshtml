@@ -1,27 +1,29 @@
 ﻿@using StackExchange.Profiling;
 
 @functions {
-    // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
-    string CalcuClassify(string[] zoneNames, string classNamePrefix) {
-        var zoneCounter = 0;
-        var zoneNumsFilled = string.Join("", zoneNames.Select(zoneName => { ++zoneCounter; return Model[zoneName] != null ? zoneCounter.ToString() : "";}).ToArray());
-        return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
-    }
+	// To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
+	string CalcuClassify(string[] zoneNames, string classNamePrefix)
+	{
+		var zoneCounter = 0;
+		var zoneNumsFilled = string.Join("", zoneNames.Select(zoneName => { ++zoneCounter; return Model[zoneName] != null ? zoneCounter.ToString() : ""; }).ToArray());
+		return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
+	}
 }
 @{
-    /* Global includes for the theme
+	/* Global includes for the theme
     ***************************************************************/
-    
+
 	SetMeta("yandex-verification", "5cacfc9073e780b0");
 	SetMeta("google-site-verification", "_u4OxmV8o7WuNwtHt8M3pXn1SJ-p9Ta1HYdrVB3jE0k");
-	
+
 	SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
 	Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
 	Style.Include("site.css");
-	
-	Style.Include("../Scripts/sitemapstyler/sitemapstyler.css");
-	
+	Style.Include("mbTabset.css");
+	// Script.Include("html5.js").AtLocation(ResourceLocation.Head); 
 
+	Style.Include("../Scripts/sitemapstyler/sitemapstyler.css");	
+	Script.Require("mbTabset");
 	
 
 	/* Some useful shortcuts or settings
@@ -240,6 +242,15 @@ if(!window.jQuery){
 </div>
 
 
+
+<script type="text/javascript">
+	$(function () {
+		$("#tabset1").buildMbTabset({
+			stop: function () { },
+			sortable: true
+		});
+	});
+  </script>
 
 @MiniProfiler.RenderIncludes()
 @tag.EndElement

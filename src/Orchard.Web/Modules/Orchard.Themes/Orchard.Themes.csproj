@@ -20,6 +20,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,6 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\orchard.ico" />
+    <Content Include="Scripts\jquery.metadata.js" />
+    <Content Include="Scripts\mbTabset.js" />
+    <Content Include="Scripts\mbTabset.min.js" />
+    <Content Include="Scripts\mbTabset.pack.js" />
+    <Content Include="Scripts\ui.core.min.js" />
+    <Content Include="Scripts\ui.sortable.min.js" />
     <Content Include="Styles\images\menu.themes.png" />
     <Content Include="Styles\images\new.gif" />
     <Content Include="Styles\images\update.gif" />
@@ -113,6 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\ThemeEntry.Current.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\jquery.mbTabset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
