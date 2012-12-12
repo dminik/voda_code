@@ -33,11 +33,17 @@
 		<div class="leftOftopOfProduct">
 			<div>leftOftopOfProduct</div>
 			<div class="Prod_MiddleName">@Display(prodFields.MiddleName.Value)</div>
-			<div class="Prod_Picture_mid">@Display(Model.zone_Picture_mid)</div>			
-			<a class="Increase" href="@largeImageUrl" rel="lightbox" title="@Display(prodFields.MiddleName.Value)">Увеличить</a>				
+			
+			<a class="Increase" href="@largeImageUrl" rel="lightbox" title="@Display(prodFields.MiddleName.Value)">				
+			<div class="Prod_Picture_mid">@Display(Model.zone_Picture_mid)</div>
+				<span id="IncreaseLabel">Увеличить</span></a>			
+			
+			
+			
+			
 			<div id="Price">
-				<span id="PriceLabel">Цена:</span>
-				<span id="PriceDigits">@Display(prodFields.Price.Value)</span><span id="PriceDot">.-</span><span id="PriceCurrency"> Грн.</span>
+				<span id="PriceLabel">Цена: </span>
+				<span id="PriceDigits">@Display(prodFields.Price.Value)</span><span id="PriceDot">.-</span><span id="PriceCurrency">  Грн.</span>
 			</div>
 			<input id="buttonBuy" type="submit" title="Купить" value="Купить" />
 		</div>

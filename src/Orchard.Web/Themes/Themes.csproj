@@ -164,7 +164,6 @@
     <Content Include="TheThemeMachine\Scripts\LightBox\close.png" />
     <Content Include="TheThemeMachine\Scripts\LightBox\donate.png" />
     <Content Include="TheThemeMachine\Scripts\LightBox\favicon.gif" />
-    <Content Include="TheThemeMachine\Scripts\LightBox\jquery-1.7.2.min.js" />
     <Content Include="TheThemeMachine\Scripts\LightBox\jquery-ui-1.8.18.custom.min.js" />
     <Content Include="TheThemeMachine\Scripts\LightBox\jquery.smooth-scroll.min.js" />
     <Content Include="TheThemeMachine\Scripts\LightBox\lightbox.js" />
