@@ -19,11 +19,18 @@
 	SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
 	Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
 	Style.Include("site.css");
-	Style.Include("mbTabset.css");
+	
 	// Script.Include("html5.js").AtLocation(ResourceLocation.Head); 
+	Style.Include("../Scripts/sitemapstyler/sitemapstyler.css");
 
-	Style.Include("../Scripts/sitemapstyler/sitemapstyler.css");	
-	Script.Require("mbTabset");
+	Style.Include("mbTabset.css");
+	Script.Require("mbTabset");	
+
+	// LightBox	
+	Script.Include("../Scripts/lightbox/jquery.smooth-scroll.min.js");
+	Script.Include("../Scripts/lightbox/jquery-ui-1.8.18.custom.min.js");
+	Script.Include("../Scripts/lightbox/lightbox.js");
+	Style.Include("lightbox.css");
 	
 
 	/* Some useful shortcuts or settings
@@ -78,6 +85,7 @@ if(!window.jQuery){
 
 @*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>*@
 <script type="text/javascript" src="@Href("~/Themes/TheThemeMachine/Scripts/sitemapstyler/sitemapstyler.js")"></script>
+
 
 
 @if (Model.Header != null)
@@ -252,5 +260,5 @@ if(!window.jQuery){
 	});
   </script>
 
-@MiniProfiler.RenderIncludes()
+@*@MiniProfiler.RenderIncludes()*@
 @tag.EndElement

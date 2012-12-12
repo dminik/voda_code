@@ -158,6 +158,20 @@
     <Content Include="TheThemeMachine\images\default\tab_sel.png" />
     <Content Include="TheThemeMachine\images\default\tab_sel_grep.png" />
     <Content Include="TheThemeMachine\images\mbTabset.jpg" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\bg-checker.png" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\box.png" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\bullet.gif" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\close.png" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\donate.png" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\favicon.gif" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\jquery-1.7.2.min.js" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\jquery.smooth-scroll.min.js" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\lightbox.js" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\loading.gif" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\next.png" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\prev.png" />
+    <Content Include="TheThemeMachine\Scripts\LightBox\speech-bubbles.png" />
     <Content Include="TheThemeMachine\Scripts\LiveInternetCounter.js" />
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\collapsed.gif" />
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\expanded.gif" />
@@ -165,6 +179,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="TheThemeMachine\Scripts\sitemapstyler\sitemapstyler.js" />
+    <Content Include="TheThemeMachine\Styles\lightbox.css" />
     <Content Include="TheThemeMachine\Styles\mbTabset.css" />
     <Content Include="TheThemeMachine\Styles\Site.css" />
     <Content Include="TheThemeMachine\Theme.png" />
@@ -288,10 +303,10 @@
     <Content Include="Mango\Views\Layout.cshtml" />
     <Content Include="Mango\Views\Web.config" />
     <Content Include="Mango\Web.config" />
-    <Content Include="TheThemeMachine\Scripts\sitemapstyler\Web.config">
+    <Content Include="TheThemeMachine\images\Web.config" />
+    <Content Include="TheThemeMachine\Scripts\Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <None Include="TheThemeMachine\images\master.psd" />
     <None Include="TheThemeMachine\ViewModels\ProductViewModel.cd" />
     <Content Include="TheThemeMachine\Views\Content-ListCategoryElement.cshtml" />
     <Content Include="TheThemeMachine\Views\Content-Product.Detail.cshtml" />
