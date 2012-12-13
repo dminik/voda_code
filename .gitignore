@@ -1,5 +1,16 @@
 
 # use glob syntax
+
+# reindex folder
+# git update-index --assume-unchanged dir-im-removing/
+# or a specific file
+# git update-index --assume-unchanged config/database.yml
+# or git rm --cached config.php
+
+
+
+
+
 syntax: glob
 
 *.ncrunchproject
