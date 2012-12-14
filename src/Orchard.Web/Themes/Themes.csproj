@@ -310,6 +310,7 @@
     <Content Include="TheThemeMachine\Views\Content-ListCategoryElement.cshtml" />
     <Content Include="TheThemeMachine\Views\Content-Product.Detail.cshtml" />
     <Content Include="TheThemeMachine\Views\Content-myTestContentType.cshtml" />
+    <Content Include="TheThemeMachine\Views\List-ListProduct.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
