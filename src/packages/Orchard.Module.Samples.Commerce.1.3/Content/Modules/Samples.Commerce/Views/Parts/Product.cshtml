@@ -1,0 +1,7 @@
+﻿@if(Model.ImageUrl != null && !string.IsNullOrEmpty(Model.ImageUrl)) {
+    <img src="@Model.ImageUrl" width="250" />
+}
+<br/>
+@Model.Description<br />
+@*@Model.Sku<br/>*@
+@T("Price"): <b>$@Model.Price</b><br />

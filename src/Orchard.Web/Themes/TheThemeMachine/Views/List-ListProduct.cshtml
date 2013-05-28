@@ -1,10 +1,51 @@
-<form action="http://localhost/DliaKvartir/Osmos">
+@using Orchard.ContentManagement
+@using Contrib.Taxonomies.Models
+
+@{
+
+
+	var prodFields = Model.ContentItem.ListProduct;
+	var obezzhelezivanieField = prodFields.Obezzhelezivanie;
+	var countryField = prodFields.C;
+
+
+	var contentManager = WorkContext.Resolve<IContentManager>();
+	// contentManager.Query<TaxonomyPart>()    BuildEditor
+	var items = contentManager.Query("WhatsAround");
+
+	// var val1 = @Model.Model.Terms[0].Name;
+
+
+}
+
+<div>
+
+	<div>
+
+		<form action="http://localhost/DliaKvartir/Osmos">
 	
-	myFilterField<input type="text" name="myFilterField" value="xxx" />
-	Obezzhelezivanie<input type="text" name="Obezzhelezivanie" value="Нет"/>
+			myFilterField<input type="text" name="myFilterField" value="xxx" />
+			Obezzhelezivanie<input type="text" name="@obezzhelezivanieField.Name" value="Нет"/>
+			
+			
+			@* Render filter Country *@
+			
+			
+			
+			
+			
 
-	<input type="submit"/>
-</form>
 
-@*Render list items*@
-@DisplayChildren(Model)
+			<input type="submit"/>
+		</form>
+
+	</div>
+
+	<div>
+		@*Render list items*@
+		@DisplayChildren(Model)
+
+
+	</div>
+
+</div>

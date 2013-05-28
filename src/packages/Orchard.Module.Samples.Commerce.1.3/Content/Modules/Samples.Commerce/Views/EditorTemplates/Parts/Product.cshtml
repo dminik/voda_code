@@ -1,0 +1,38 @@
+﻿@model Samples.Commerce.Models.ProductPart
+@using Orchard.Utility.Extensions;
+
+@{
+    Script.Require("jQuery").AtHead();
+    Script.Include("MediaBrowser.js").AtHead();
+}
+
+<fieldset>
+
+    <label class="sub" for="ImageUrl">@T("Description")</label><br />
+    @Html.TextAreaFor(m => m.Description, 5, 200, new { @class = "text", @style = "width:99%" })
+
+    <label class="sub" for="Sku">@T("Sku")</label><br />
+    @Html.TextBoxFor(m => m.Sku, new { @class = "text" })<br />
+
+    <label class="sub" for="Price">@T("Price")</label><br />
+    @Html.TextBoxFor(m => m.Price, new { @class = "text" })<br/>
+
+    <label class="sub" for="ImageUrl">@T("Image Url")</label><br />
+    @Html.TextBoxFor(m => m.ImageUrl, new { @class = "text", @style = "width:70%" })
+
+    <input class="button" id="PickImage" value="Pick Media" width="30" />
+
+    <script language="javascript">
+    var baseUrl = "@HttpContext.Current.Request.ToRootUrlString().TrimEnd('/')";
+    jQuery("#PickImage").click(function () {
+            $("form").trigger("orchard-admin-pickimage-open",
+                    {
+                        img: $("#ImageUrl").val(),
+                        uploadMediaPath: "Products",
+                        callback: function (data) {
+                            $("#ImageUrl").val(baseUrl + data.img.src);                           
+                        }
+                    });
+        });            
+    </script>
+</fieldset>

@@ -1,0 +1,13 @@
+Name: Commerce Sample
+AntiForgery: enabled
+Author: Microsoft DPE
+Website: http://orchardproject.net
+Version: 1.3
+OrchardVersion: 1.3
+Description: Minimalist E-Commerce implementation
+Features:
+    Samples.Commerce:
+		Name: Commerce Sample
+        Description: Content part for product items.
+		Category: Commerce
+		Dependencies: Contents, Common, Routable, Settings, Orchard.jQuery, Orchard.Media, Orchard.MediaPicker
