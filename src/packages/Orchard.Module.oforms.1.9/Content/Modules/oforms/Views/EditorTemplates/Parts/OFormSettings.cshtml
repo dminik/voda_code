@@ -1,9 +1,0 @@
-﻿@model oforms.Models.OFormSettingsPart
-<fieldset>
-    <legend>@T("OForms settings")</legend>
-    <div>
-        <label for="@Html.FieldIdFor(m => m.SerialKey)">@T("Serial key")</label>
-        @Html.TextBoxFor(m => m.SerialKey, new { @class = "textMedium" })
-        @Html.ValidationMessage("SerialKey", "*")
-    </div>
-</fieldset>
